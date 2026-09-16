@@ -52,7 +52,6 @@ def agregar_producto(carrito, catalogo, id_producto, cantidad):
                     
                     print("Producto eliminado")
                     return carrito
-=======
-def carrito(nombre):
+=======    
   
 >>>>>>> aa5553223cbccc6bfed40d05993517d12ce9fa0d
