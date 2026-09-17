@@ -1,12 +1,12 @@
 
 
 <<<<<<< HEAD
-# Simulador de carrito de compras
+# Simulador de carrito 
 
 
-def agregar_producto(carrito, catalogo, id_producto, cantidad):
+def agregar_producto(carrito, catalogo, id_prod, cantidad):
     
-    if id_producto not in catalogo:
+    if id_prod not in catalogo:
         print("El producto no existe")
         return carrito
     
@@ -14,7 +14,7 @@ def agregar_producto(carrito, catalogo, id_producto, cantidad):
         print("La cantidad debe ser mayor a 0")
         return carrito
     
-    stock = catalogo[id_producto]["stock"]
+    stock = catalogo[id_prod]["stock"]
     
     if cantidad > stock:
         print("No hay suficiente stock")
@@ -23,7 +23,7 @@ def agregar_producto(carrito, catalogo, id_producto, cantidad):
     
     for i in range(len(carrito)):
         
-        if carrito[i][0] == id_producto:
+        if carrito[i][0] == id_prod:
             
             cantidad_actual = carrito[i][1]
             nueva_cantidad = cantidad_actual + cantidad
@@ -32,21 +32,21 @@ def agregar_producto(carrito, catalogo, id_producto, cantidad):
                 print("No hay suficiente stock para agregar esa cantidad") 
                 return carrito
             
-            carrito[i] = (id_producto, nueva_cantidad)
+            carrito[i] = (id_prod, nueva_cantidad)
             
             print("producto actualizado")
             return carrito
 
-            carrito.append((id_producto, cantidad))
+            carrito.append((id_prod, cantidad))
 
             print("Producto agregado correctamente")
             return carrito 
         
-        def eliminar_producto(carrito, id_producto):
+        def eliminar_producto(carrito, id_prod):
             
             for i in range(len(carrito)):
                 
-                if carrito[i][0] == id_producto:
+                if carrito[i][0] == id_prod:
                     
                     carrito.pop(i)
                     
