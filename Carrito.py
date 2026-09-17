@@ -7,7 +7,7 @@
 def agregar_producto(carrito, catalogo, id_prod, cantidad):
     
     if id_prod not in catalogo:
-        print("El producto no existe")
+        print("Producto no existente")
         return carrito
     
     if cantidad <= 0:
