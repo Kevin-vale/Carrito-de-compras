@@ -4,78 +4,65 @@ Created on Wed Sep 16 19:27:19 2026
 
 @author: isra2
 """
-#diccionario con los productos disponibles en la tienda
-InvProd = {"ID01": {"NomProd": "CerealMaiz", "Categoria": "Cereales", "Cantidad": 20, "Precio": 38},
-           "ID02": {"NomProd": "CafeSoluble", "Categoria": "Cafe", "Cantidad": 15, "Precio": 50},
-           "ID03": {"NomProd": "PapelHigG", "Categoria": "Higiene", "Cantidad": 5, "Precio": 46},
-           "ID04": {"NomProd": "PapelhigCH", "Categoria": "Higiene", "Cantidad": 10, "Precio": 23},
-           "ID05": {"NomProd": "LataAtun", "Categoria": "Enlatados", "Cantidad": 8, "Precio": 17},
-           "ID06": {"NomProd": "PanBlancoG", "Categoria": "Pan", "Cantidad": 2, "Precio": 39},
-           "ID07": {"NomProd": "CerealChoco", "Categoria": "Cereales", "Cantidad": 6, "Precio": 42},
-           "ID09": {"NomProd": "LataSalsa", "Categoria": "Enlatados", "Cantidad": 7, "Precio": 40},
-           "ID010": {"NomProd": "Papas", "Categoria": "Golosinas", "Cantidad": 3, "Precio": 14},
-           "ID011": {"NomProd": "Jabon", "Categoria": "Higiene", "Cantidad": 4, "Precio": 24},
-           "ID012": {"NomProd": "PastaDental", "Categoria": "Higiene", "Cantidad": 15, "Precio": 14},
-           "ID013": {"NomProd": "Aceite", "Categoria": "Aceites", "Cantidad": 5, "Precio": 30},           
-           "ID014": {"NomProd": "VasosDes", "Categoria": "Desechables", "Cantidad": 4, "Precio": 22},
-           "ID015": {"NomProd": "PlatoDes", "Categoria": "Desechable", "Cantidad": 3, "Precio": 18},
-           "ID016": {"NomProd": "cartonLeche", "Categoria": "Bebidas", "Cantidad": 4, "Precio": 16},
-           "ID017": {"NomProd": "LitroAgua", "Categoria": "Bebidas", "Cantidad": 7, "Precio": 10},
-           "ID018": {"NomProd": "Cerillos", "Categoria": "Miselaneos", "Cantidad": 6, "Precio": "12"},
-           "ID019": {"NomProd": "shampo", "Categoria": "Higiene", "Cantidad": 2, "Precio": 47},
-           "ID020": {"NomProd": "Jugo", "Categoria": "Bebidas", "Cantidad": 8, "Precio": 24},
-           "ID021": {"NomProd": "Galonvinagre", "Categoria": "Miselaneos", "Cantidad": 1, "Precio": 28},
-           "ID022": {"NomProd": "PanDulce", "Categoria": "Pan", "Cantidad": 1, "Precio": 18},
-           "ID023": {"NomProd": "Cerveza", "Categoria": "Bebidas", "Cantidad": 3, "Precio": 50},
-           }
+InvProd = {
+    "ID01": {"nombre": "CerealMaiz", "categoria": "Cereales", "stock": 20, "precio": 38.0},
+    "ID02": {"nombre": "CafeSoluble", "categoria": "Cafe", "stock": 15, "precio": 50.0},
+    "ID03": {"nombre": "PapelHigG", "categoria": "Higiene", "stock": 5, "precio": 46.0},
+    "ID04": {"nombre": "PapelhigCH", "categoria": "Higiene", "stock": 10, "precio": 23.0},
+    "ID05": {"nombre": "LataAtun", "categoria": "Enlatados", "stock": 8, "precio": 17.0},
+    "ID06": {"nombre": "PanBlancoG", "categoria": "Pan", "stock": 2, "precio": 39.0},
+    "ID07": {"nombre": "CerealChoco", "categoria": "Cereales", "stock": 6, "precio": 42.0},
+    "ID09": {"nombre": "LataSalsa", "categoria": "Enlatados", "stock": 7, "precio": 40.0},
+    "ID010": {"nombre": "Papas", "categoria": "Golosinas", "stock": 3, "precio": 14.0},
+    "ID011": {"nombre": "Jabon", "categoria": "Higiene", "stock": 4, "precio": 24.0},
+    "ID012": {"nombre": "PastaDental", "categoria": "Higiene", "stock": 15, "precio": 14.0},
+    "ID013": {"nombre": "Aceite", "categoria": "Aceites", "stock": 5, "precio": 30.0},           
+    "ID014": {"nombre": "VasosDes", "categoria": "Desechables", "stock": 4, "precio": 22.0},
+    "ID015": {"nombre": "PlatoDes", "categoria": "Desechables", "stock": 3, "precio": 18.0},
+    "ID016": {"nombre": "cartonLeche", "categoria": "Bebidas", "stock": 4, "precio": 16.0},
+    "ID017": {"nombre": "LitroAgua", "categoria": "Bebidas", "stock": 7, "precio": 10.0},
+    "ID018": {"nombre": "Cerillos", "categoria": "Miselaneos", "stock": 6, "precio": 12.0},
+    "ID019": {"nombre": "shampo", "categoria": "Higiene", "stock": 2, "precio": 47.0},
+    "ID020": {"nombre": "Jugo", "categoria": "Bebidas", "stock": 8, "precio": 24.0},
+    "ID021": {"nombre": "Galonvinagre", "categoria": "Miselaneos", "stock": 1, "precio": 28.0},
+    "ID022": {"nombre": "PanDulce", "categoria": "Pan", "stock": 1, "precio": 18.0},
+    "ID023": {"nombre": "Cerveza", "categoria": "Bebidas", "stock": 3, "precio": 50.0},
+}
 
 
 def cargar_catalogo():
-
+ 
     return InvProd
 
-def mostrar_catalogo(Productos):
-    
-    print("\n========== CATALOGO ==========")
-    
-    
-    for id_prod in Productos:
-        producto = Productos[id_prod]
-        
-        print(
-            id_prod, 
-            "-",
-            producto["NomProd"],
-            "- Categoria:",
-            producto["Categoria"], 
-            "- Cantidad:", 
-            producto["Cantidad"], 
-            "- Precio: $", 
-            producto["Precio"]
-            )
-        
-        def agregar_producto_inventario(Productos, id_prod, Nombre, Categoria, Cantidad, Precio):
-            
-            if id_prod in Productos:
-                print("El producto", id_prod, "ya existe.")
-                
-            else:
-                Productos[id_prod] = { 
-                    "NomProd": Nombre, 
-                    "Categoria": Categoria, 
-                    "Cantidad": Cantidad, 
-                    "Precio": Precio 
-                    }
-                print("Producto", Nombre, "agregado correctamente.")
-                
-            def eliminar_producto_inventario(Productos, id_producto):
-                    
-                
-                if id_prod in Productos:
-                    
-                    Producto_borrado = Productos[id_prod]["NomProd"] 
-                    Productos.pop(id_prod) 
-                    print("El producto", Producto_borrado, "fue borrado.")
 
-                else:
-                    print("El producto", id_prod, "no existe.")
+def mostrar_catalogo(catalogo):
+
+    print("\n========================= CATÁLOGO DE PRODUCTOS =========================")
+    print(f"{'ID':<8} | {'Nombre':<15} | {'Categoría':<12} | {'Stock':<6} | {'Precio':<8}")
+    print("-" * 65)
+    for id_prod, prod in catalogo.items():
+        print(f"{id_prod:<8} | {prod['nombre']:<15} | {prod['categoria']:<12} | {prod['stock']:<6} | ${prod['precio']:<.2f}")
+    print("=========================================================================\n")
+
+
+def agregar_producto_inventario(catalogo, id_prod, nombre, categoria, stock, precio):
+
+    if id_prod in catalogo:
+        print(f"Error: El producto con ID '{id_prod}' ya existe.")
+    else:
+        catalogo[id_prod] = {
+            "nombre": nombre,
+            "categoria": categoria,
+            "stock": stock,
+            "precio": float(precio)
+        }
+        print(f"Producto '{nombre}' agregado al catálogo correctamente.")
+
+
+def eliminar_producto_inventario(catalogo, id_prod):
+
+    if id_prod in catalogo:
+        producto_borrado = catalogo.pop(id_prod)
+        print(f"El producto '{producto_borrado['nombre']}' fue eliminado del catálogo.")
+    else:
+        print(f"Error: El producto con ID '{id_prod}' no existe en el catálogo.")
