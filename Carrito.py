@@ -34,7 +34,7 @@ def agregar_producto(carrito, catalogo, id_prod, cantidad):
             
             carrito[i] = (id_prod, nueva_cantidad)
             
-            print("producto actualizado")
+            print("El producto a sido actualizado")
             return carrito
 
             carrito.append((id_prod, cantidad))
