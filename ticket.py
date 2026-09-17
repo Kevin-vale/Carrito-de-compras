@@ -38,9 +38,9 @@ def generar_ticket(carrito, catalogo, total):
         descuento_ahorrado = subtotal_base - total
         print(f" Descuento aplicado:           -${descuento_ahorrado:.2f}")
         
-    print("========================================")
+    print("=========================================")
     print(f" TOTAL A PAGAR:                 ${total:.2f}")
-    print("========================================")
+    print("=========================================")
     print("      Gracias por su compra.            \n")
     
     fecha_registro = datetime.now().strftime("%Y-%m-%d")
