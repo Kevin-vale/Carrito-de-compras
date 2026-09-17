@@ -32,5 +32,5 @@ def aplicar_descuento(subtotal, tipo_descuento):
 
 
 subtotal_calculado = calcular_subtotal(carrito, InvProd)
-desc = input(" seleccione el descuento (10%, 20%, FIJO): ").strip()
+desc = input(" seleccione el descuento (10%, 20%, 50%): ").strip()
 print("Total a pagar:", aplicar_descuento(subtotal_calculado, desc))
