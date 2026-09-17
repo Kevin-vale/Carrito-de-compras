@@ -4,6 +4,7 @@ Created on Wed Sep 16 14:51:17 2026
 
 @author: leone
 """
+
 def el_menu():
     while True:
         print("-MENÚ PRINCIPAL-")
@@ -27,11 +28,14 @@ def el_menu():
 
 
 if __name__ == "__main__":
+    
     while True:
         eleccion = el_menu()
+        
         if eleccion == 6:
             print("Proceso terminado, No regrese :)")
             break
+        
         elif eleccion <= 5:
             print(eleccion)
             print("algo")
