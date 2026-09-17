@@ -8,7 +8,7 @@ El sistema permite la gestión de un catálogo de productos, el control de un ca
 *   **Israel Esaú Luna Nicanor** — Encargado de Catálogo (Definición y mantenimiento del diccionario de productos).
 *   **Kevin Valentino León Aguilar** — Encargado de Carrito (Funciones para agregar y eliminar productos del carrito).
 *   **Francisco Javier Reyes Contreras** — Encargado de Totales y Descuentos (Cálculo de subtotales, reducción por cupones y netos).
-*   **María Fernanda Ramírez Flores** (Integrador / Documentador)** — Integración de módulos, generación de la tupla inmutable del ticket, formato visual del recibo impreso y administración del repositorio de Git.
+*   **María Fernanda Ramírez Flores** — Integración de módulos, generación de la tupla inmutable del ticket, formato visual del recibo impreso y administración del repositorio de Git.
 
 ---
 
