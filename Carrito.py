@@ -7,7 +7,7 @@
 def agregar_producto(carrito, catalogo, id_prod, cantidad):
     
     if id_prod not in catalogo:
-        print("El producto no existe")
+        print("Producto no existente")
         return carrito
     
     if cantidad <= 0:
@@ -18,7 +18,7 @@ def agregar_producto(carrito, catalogo, id_prod, cantidad):
     
     if cantidad > stock:
         print("No hay suficiente stock")
-        print("stock disponibles:", stock)
+        print("stock que están disponibles:", stock)
         return carrito 
     
     for i in range(len(carrito)):
@@ -34,7 +34,7 @@ def agregar_producto(carrito, catalogo, id_prod, cantidad):
             
             carrito[i] = (id_prod, nueva_cantidad)
             
-            print("producto actualizado")
+            print("El producto a fue actualizado")
             return carrito
 
             carrito.append((id_prod, cantidad))
