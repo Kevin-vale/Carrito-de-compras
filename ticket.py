@@ -13,10 +13,10 @@ def generar_ticket(carrito, catalogo, total):
     folio = f"F{random.randint(1000, 9999)}"
     fecha_completa = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    print("\n========================================")
+    print("\n==========================================")
     print(f"         TICKET DE COMPRA ({folio})       ")
     print(f" Fecha: {fecha_completa}")
-    print("========================================")
+    print("==========================================")
     
     print(f"{'Producto':<18} {'Cant.':<6} {'Total':<10}")
     print("----------------------------------------")
