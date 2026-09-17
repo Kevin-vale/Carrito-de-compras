@@ -7,7 +7,7 @@ Created on Wed Sep 16 14:51:17 2026
 #Mostrar opciones disponibles con el uso del while true
 
 while True:
-    print("-MENÚ PRINCIPAL-")
+    print("-MENÚ PRINCIPAL- ")
     print("1 ==> Ver catálogo")
     print("2 ==> Agregar producto")
     print("3 ==> Eliminar producto")
