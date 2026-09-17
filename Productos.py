@@ -33,7 +33,7 @@ InvProd = {"ID01": {"NomProd": "CerealMaiz", "Categoria": "Cereales", "Cantidad"
 def agregar_producto(Productos, id_producto, Nombre, Categoria, Cantidad, Precio):
     "Agregar producto al inventario"
     if id_producto in Productos:
-        print (f"el {id_producto} ya esta")
+        print (f"el {id_producto} ya esta  ")
     else: Productos[id_producto] = {"NomPrdo": Nombre, "Categoria": Categoria, "Cantidad": Cantidad, "Precio": Precio}
     print (f"Producto '{Nombre}' agregado")
     
