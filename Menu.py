@@ -30,7 +30,7 @@ if __name__ == "__main__":
     while True:
         eleccion = el_menu()
         if eleccion == 6:
-            print("¡Hasta luego!")
+            print("Proceso terminado, No regrese :)")
             break
         elif eleccion <= 5:
             print(eleccion)
