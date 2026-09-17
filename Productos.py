@@ -29,19 +29,53 @@ InvProd = {"ID01": {"NomProd": "CerealMaiz", "Categoria": "Cereales", "Cantidad"
            "ID023": {"NomProd": "Cerveza", "Categoria": "Bebidas", "Cantidad": 3, "Precio": 50},
            }
 
-#para agregar un producgto
-def agregar_producto(Productos, id_producto, Nombre, Categoria, Cantidad, Precio):
-    "Agregar producto al inventario"
-    if id_producto in Productos:
-        print (f"el {id_producto} ya esta  ")
-    else: Productos[id_producto] = {"NomPrdo": Nombre, "Categoria": Categoria, "Cantidad": Cantidad, "Precio": Precio}
-    print (f"Producto '{Nombre}' agregado")
+
+def cargar_catalogo():
+
+    return InvProd
+
+def mostrar_catalogo(Productos):
     
-#para eliminar un producto
-def eliminar_producto(Productos, id_producto):
-    if id_producto in Productos:
-        Producto_borrado = Productos[id_producto]["NomProd"]
-        Productos.pop(id_producto)
-        print (f"el {Producto_borrado} fue borrado")
-    else: 
-        print (f"Producto '{id_producto}' no esta")
+    print("\n========== CATALOGO ==========")
+    
+    
+    for id_prod in Productos:
+        producto = Productos[id_prod]
+        
+        print(
+            id_prod, 
+            "-",
+            producto["NomProd"],
+            "- Categoria:",
+            producto["Categoria"], 
+            "- Cantidad:", 
+            producto["Cantidad"], 
+            "- Precio: $", 
+            producto["Precio"]
+            )
+        
+        def agregar_producto_inventario(Productos, id_prod, Nombre, Categoria, Cantidad, Precio):
+            
+            if id_prod in Productos:
+                print("El producto", id_prod, "ya existe.")
+                
+            else:
+                Productos[id_prod] = { 
+                    "NomProd": Nombre, 
+                    "Categoria": Categoria, 
+                    "Cantidad": Cantidad, 
+                    "Precio": Precio 
+                    }
+                print("Producto", Nombre, "agregado correctamente.")
+                
+            def eliminar_producto_inventario(Productos, id_producto):
+                    
+                
+                if id_prod in Productos:
+                    
+                    Producto_borrado = Productos[id_prod]["NomProd"] 
+                    Productos.pop(id_prod) 
+                    print("El producto", Producto_borrado, "fue borrado.")
+
+                else:
+                    print("El producto", id_prod, "no existe.")
