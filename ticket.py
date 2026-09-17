@@ -24,8 +24,8 @@ def generar_ticket(carrito, catalogo, total):
     # Calculamos el subtotal acumulado para saber si hubo descuento
     subtotal_base = 0.0
     for id_prod, cantidad in carrito:
-        nombre = catalogo[id_prod]["nombre"]
-        precio = catalogo[id_prod]["Precio"]
+        nombre = catalogo[id_prod]["Identificacion"]
+        precio = catalogo[id_prod]["Pesos"]
         subtotal_prod = precio * cantidad
         subtotal_base += subtotal_prod
         print(f"{nombre:<18} {cantidad:<6} ${subtotal_prod:<10.2f}")
