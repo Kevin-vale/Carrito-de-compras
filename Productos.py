@@ -20,7 +20,7 @@ InvProd = {"ID01": {"NomProd": "CerealMaiz", "Categoria": "Cereales", "Cantidad"
            "ID015": {"NomProd": "PlatoDes", "Categoria": "Desechable", "Cantidad": 3, "Precio": 18},
            "ID016": {"NomProd": "cartonLeche", "Categoria": "Bebidas", "Cantidad": 4, "Precio": 16},
            "ID017": {"NomProd": "LitroAgua", "Categoria": "Bebidas", "Cantidad": 7, "Precio": 10},
-           "ID018": {"NomProd": "Cerillos", "Categoria": "Miselaneos", "Cantidad": 6, "Precio": "Si"},
+           "ID018": {"NomProd": "Cerillos", "Categoria": "Miselaneos", "Cantidad": 6, "Precio": "12"},
            "ID019": {"NomProd": "shampo", "Categoria": "Higiene", "Cantidad": 2, "Precio": 47},
            "ID020": {"NomProd": "Jugo", "Categoria": "Bebidas", "Cantidad": 8, "Precio": 24},
            "ID021": {"NomProd": "Galonvinagre", "Categoria": "Miselaneos", "Cantidad": 1, "Precio": 28},
