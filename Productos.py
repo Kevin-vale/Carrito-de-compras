@@ -29,7 +29,7 @@ InvProd = {"ID01": {"NomProd": "CerealMaiz", "Categoria": "Cereales", "Cantidad"
            "ID023": {"NomProd": "Cerveza", "Categoria": "Bebidas", "Cantidad": 3, "Precio": 50},
            }
 
-#para agregar un producgto
+
 def agregar_producto(Productos, id_producto, Nombre, Categoria, Cantidad, Precio):
     "Agregar producto al inventario"
     if id_producto in Productos:
@@ -37,7 +37,7 @@ def agregar_producto(Productos, id_producto, Nombre, Categoria, Cantidad, Precio
     else: Productos[id_producto] = {"NomPrdo": Nombre, "Categoria": Categoria, "Cantidad": Cantidad, "Precio": Precio}
     print (f"Producto '{Nombre}' agregado")
     
-#para eliminar un producto
+
 def eliminar_producto(Productos, id_producto):
     if id_producto in Productos:
         Producto_borrado = Productos[id_producto]["NomProd"]
