@@ -4,7 +4,11 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
+<<<<<<< HEAD
 recent_files = ['C:\\Users\\reyes\\.spyder-py3\\temp.py', 'Descuento.py']
+=======
+recent_files = []
+>>>>>>> 31a261a5337ded342a5013a956ac589bf7e03e11
 
 [main]
 version = 0.2.0
