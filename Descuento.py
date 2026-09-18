@@ -1,9 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 16 21:45:39 2026
 
+@author: reyes
+"""
 
-def calcular_subtotal(carrito, catalogo): # definimos el carrito y el catalogo 
-    subtotal = 0.0 
-    for id_prod, cantidad in carrito:  # recorre todo el carrito 
-        precio = catalogo[id_prod]["Precio"] #busca en el catalogo el producto y el precio 
+def calcular_subtotal(carrito, catalogo):
+    subtotal = 0.0
+    for id_prod, cantidad in carrito:
+        precio = catalogo[id_prod]["Precio"]
         subtotal += precio * cantidad
     return subtotal
 
@@ -29,8 +34,3 @@ def aplicar_descuento(subtotal, tipo_descuento):
         total = 0.0
 
     return round(total, 2)
-
-
-subtotal_calculado = calcular_subtotal(carrito, InvProd)
-desc = input(" seleccione el descuento que desa aplicar (10%, 20%, 50%): ").strip()
-print("Total del carrito a pagar:", aplicar_descuento(subtotal_calculado, desc))
