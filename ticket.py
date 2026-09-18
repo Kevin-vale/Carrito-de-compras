@@ -19,7 +19,7 @@ def generar_ticket(carrito, catalogo, total):
     print("\n========================================")
     print(f"         TICKET DE COMPRA ({folio})       ")
     print(f" Fecha: {fecha_completa}")
-    print("========================================")
+    print("=========================================")
     
     print(f"{'Producto':<18} {'Cant.':<6} {'Total':<10}")
     print("----------------------------------------")
